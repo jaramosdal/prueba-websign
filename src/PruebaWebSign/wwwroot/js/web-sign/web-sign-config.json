@@ -1,0 +1,68 @@
+{
+  "bearerToken": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQ3VzdG9tZXIiLCJDdXN0b21lcklkIjozODUsIlRva2VuSWQiOjEsImF1ZCI6ImVkYXRhbGlhIGRhdGEgc29sdXRpb25zIHMubC4iLCJuYmYiOjE2ODc5NDI4MDYsImV4cCI6MTcwMzk4MDgwMCwiaWF0IjoxNjg3OTQyODA2LCJpc3MiOiJlZGF0YWxpYSBkYXRhIHNvbHV0aW9ucyBzLmwuIn0.BXcwCz-70-yngd9csobPSIqrOVEjfl-Cs1jWBtuTPFyG90jIq-NTDs3eFfWCfEIimR01RBJxIxl9WCguL54DEw",
+  "containerWidth": "100%",
+  "containerHeight": "100%",
+  "signatureEnvironment": "PRE",
+  "signatureType": "display",
+  "signatureColorHex": "#0000ff",
+  "autoDownload": true,
+  "minPointsRequiredToSign": 100,
+  "widget": {
+    "type": "manual",
+    "width": 160,
+    "height": 100,
+    "x": 0,
+    "y": 0,
+    "page": 0,
+    "customText": [
+      {
+        "text": "Documento firmado digitalmente",
+        "fontSize": 6
+      },
+      {
+        "text": "Fecha y hora: ##TIMESTAMP##",
+        "fontSize": 4
+      }
+    ],
+    "floatText": null,
+    "gapX": 0,
+    "gapY": 0
+  },
+  "properties": {
+    "reason": " ",
+    "location": " "
+  },
+  "options": {
+    "includeTimestamp": false,
+    "includeOCSP": false,
+    "validateCertificate": false,
+    "pdfCertifiedSignature": false
+  },
+  "timestampProvider": {
+    "url": null,
+    "user": null,
+    "password": null
+  },
+  "ocspProvider": {
+    "url": null,
+    "user": null,
+    "password": null
+  },
+  "certificate": {},
+  "wacom": {
+    "ebpServiceUrl": "https://ebpservice.firmar.online/v10/EBP",
+    "ebpServiceSignatureUrl": "https://ebpservice.firmar.online/v10/Signature",
+    "enableScreenSaver": true,
+    "blackAndWhiteScreenSaver": "/js/web-sign/stu/blackAndWhiteScreenSaver.png",
+    "colorScreenSaver": "/js/web-sign/stu/colorScreenSaver.png",
+    "enableEbp": true,
+    "blackAndWhiteEbp": "/js/web-sign/stu/blackAndWhiteEbp.bin",
+    "colorEbp": "/js/web-sign/stu/colorEbp.bin",
+    "varEbp": "Titulo=Título de STU|||Subtitulo=Subtítulo de STU|||Nombre=Edatalia|||AreaFirma=Firma a continuación",
+    "enableInitialEbp": true,
+    "blackAndWhiteInitialEbp": "/js/web-sign/stu/blackAndWhiteInitialEbp.bin",
+    "colorInitialEbp": "/js/web-sign/stu/colorInitialEbp.bin",
+    "varInitialEbp": "Titulo=Título inicial|||Subtitulo=Subtítulo inicial|||Nombre=Edatalia|||TextoPrevio=Estoy de acuerdo con el documento a firmar",
+    "minPointsRequiredToSignMultipier": 2
+  }
+}

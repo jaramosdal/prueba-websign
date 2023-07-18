@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Firmas";
+}
+
+
+<h2 style="margin-left: 20px; margin-right: 20px">Integración Básica WebSign</h2>
+<input style="margin-left: 20px;" type="file" id="inputFile" accept="application/pdf">
+<button id="sign-button">Continuar</button>
+<div id="web-sign" style="margin-top: 2em;"></div>
+
+<script type="module">
+    import WebSign from '/js/web-sign/web-sign.js'
+
+    const signButton = document.getElementById('sign-button');
+    signButton.addEventListener('click', launchWebSign);
+
+    function launchWebSign() {
+        let file = document.getElementById("inputFile").files[0];
+
+        new WebSign(file, (event) => {
+            console.log("Event type: " + event.type);
+            if (event.type === "signed") {
+                console.log(event.data);
+            } else if (event.type === "error") {
+                console.log(event.error);
+            }
+        });
+    }
+</script>
+
